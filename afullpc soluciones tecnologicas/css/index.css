@@ -1,0 +1,698 @@
+/*Pantallas para moviles*/ /*Pantallas para moviles*/ /*Pantallas para moviles*/ /*Pantallas para moviles*/ /*Pantallas para moviles*/ /*Pantallas para moviles*/ /*Pantallas para moviles*/ /*Pantallas para moviles*/ /*Pantallas para moviles*/ /*Pantallas para moviles*/ /*Pantallas para moviles*/ /*Pantallas para moviles*/ /*Pantallas para moviles*/ /*Pantallas para moviles*/ /*Pantallas para moviles*/ /*Pantallas para moviles*/ /*Pantallas para moviles*/ /*Pantallas para moviles*/ /*Pantallas para moviles*/ /*Pantallas para moviles*/ /*Pantallas para moviles*/ /*Pantallas para moviles*/ /*Pantallas para moviles*/ /*Pantallas para moviles*/ /*Pantallas para moviles*/ /*Pantallas para moviles*/ /*Pantallas para moviles*/ /*Pantallas para moviles*/ /*Pantallas para moviles*/ /*Pantallas para moviles*/ /*Pantallas para moviles*/ /*Pantallas para moviles*/ /*Pantallas para moviles*/ /*Pantallas para moviles*/ /*Pantallas para moviles*/ /*Pantallas para moviles*/ /*Pantallas para moviles*/ /*Pantallas para moviles*/ /*Pantallas para moviles*/ /*Pantallas para moviles*/ /*Pantallas para moviles*/ /*Pantallas para moviles*/ /*Pantallas para moviles*/ /*Pantallas para moviles*/ /*Pantallas para moviles*/ /*Pantallas para moviles*/ /*Pantallas para moviles*/ /*Pantallas para moviles*/ /*Pantallas para moviles*/ /*Pantallas para moviles*/ /*Pantallas para moviles*/ /*Pantallas para moviles*/ /*Pantallas para moviles*/ /*Pantallas para moviles*/ /*Pantallas para moviles*/ /*Pantallas para moviles*/
+
+/*Pantallas para moviles*/
+
+@media screen and (max-width: 767px) {
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    background-color: #e5e4e2;
+  }
+
+  /* Estructura grid del header, main, footer */
+
+  .estructure-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template:
+      "header" 6rem
+      "main" auto
+      "footer" 6rem;
+  }
+
+  .estructure-grid > * {
+    border: 1px solid black;
+  }
+
+  /* Navegador*/
+
+  .header {
+    background-color: rgb(0, 0, 0);
+    display: grid;
+    align-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0px 0px 10px 1px black;
+    border: none;
+    border-bottom: 0.125rem black solid;
+    animation: changeBorderColor 2.2s linear infinite; /* Aplica la animación de cambio de color del borde */
+  }
+
+  .logo {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 4rem 0 4rem;
+  }
+
+  .afull {
+    font-family: "Exo", sans-serif;
+    font-style: italic;
+    font-size: 2rem;
+    font-weight: 500;
+    color: white;
+    margin: 0;
+  }
+
+  .st {
+    color: white;
+    font-size: 0.8rem;
+    font-style: italic;
+    margin: 0 0 0 4px;
+    padding: 0;
+    color: #00b9e8;
+  }
+
+  .pc {
+    color: #00b9e8;
+  }
+
+  .menu-icon {
+    width: 1.875rem;
+    height: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    align-self: center;
+  }
+
+  .menu-desk {
+    display: none;
+  }
+
+  .line {
+    width: 100%;
+    height: 0.25rem;
+    background-color: #00b9e8;
+  }
+
+  /* main contenido principal*/
+
+  .main {
+    border: 0;
+  }
+
+  .container-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container-the-services {
+    display: grid;
+    background-color: none;
+    color: white;
+    margin: auto 4rem auto 4rem;
+    gap: 2rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .services1,
+  .services2,
+  .services3 {
+    border: 2px solid #000000;
+    box-shadow: 0px 0px 10px 1px black;
+    background-color: #ffffff;
+    cursor: pointer;
+  }
+
+  .services-p {
+    cursor: pointer;
+  }
+
+  .services-icon1,
+  .services-icon2,
+  .services-icon3 {
+    width: 6.25rem;
+    padding: 1rem;
+  }
+
+  @keyframes talk {
+    0%,
+    100% {
+      transform: scaleY(1);
+    }
+    50% {
+      transform: scaleY(0.95);
+    }
+  }
+
+  .services-icon1 {
+    display: inline-block;
+    position: relative;
+    animation: talk 1s infinite alternate; /* Aplica la animación de habla */
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .services-icon2 {
+    display: inline-block;
+    animation: spin 20s linear infinite; /* Aplica la animación de giro */
+  }
+
+  @keyframes shake {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      transform: translateX(-1px);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+      transform: translateX(1px);
+    }
+  }
+
+  .services-icon3 {
+    display: inline-block;
+    animation: shake 2s infinite; /* Aplica la animación de sacudida */
+  }
+
+  @keyframes scaleAnimation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .services-p1,
+  .services-p2,
+  .services-p3 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-family: "Exo", sans-serif;
+    font-style: italic;
+    font-size: 1.4rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    transition: transform 0.3s;
+    background-color: #000000;
+  }
+
+  .services-p1:hover,
+  .services-p2:hover,
+  .services-p3:hover {
+    color: #00b9e8;
+  }
+
+  /* footer*/
+
+  .footer {
+    background-color: #000000;
+    box-shadow: 0px 0px 10px 1px black;
+    border: none;
+    border-top: 0.125rem black solid;
+    animation: changeBorderColor 2.2s linear infinite; /* Aplica la animación de cambio de color del borde */
+  }
+
+  .footer-item1,
+  .footer-item2 {
+    color: white;
+  }
+
+  .soporte {
+    color: #00b9e8;
+  }
+
+  .container-social {
+    display: flex;
+    gap: 10px;
+  }
+
+  .social-icon1,
+  .social-icon2,
+  .social-icon3 {
+    width: 2rem;
+    background-color: #00b9e8;
+    padding: 0.1rem;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 4rem 0 4rem;
+  }
+
+  /*POPUP*/
+
+  /* ... (tu código CSS anterior) ... */
+
+  .popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+
+  .popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 1px black;
+    width: 50%;
+  }
+
+  .close-popup {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .quicksupport {
+    background-color: #00b9e8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .close-popup:hover {
+    color: gray;
+  }
+
+  .quicksupport:hover {
+    color: rgb(0, 0, 0);
+  }
+
+  /* Define la animación para cambiar el color del borde */
+  @keyframes changeBorderColor {
+    0%,
+    100% {
+      border-color: #007bff; /* Color inicial y final del borde (negro) */
+    }
+    20% {
+      border-color: #00d68f; /* Cambia a rojo */
+    }
+    40% {
+      border-color: #ffc107; /* Cambia a amarillo */
+    }
+    60% {
+      border-color: #ff6b6b; /* Cambia a verde */
+    }
+    80% {
+      border-color: #a855f7; /* Cambia a azul */
+    }
+  }
+}
+
+/*Pantallas para escritorios*/ /*Pantallas para escritorios*/ /*Pantallas para escritorios*/ /*Pantallas para escritorios*/ /*Pantallas para escritorios*/ /*Pantallas para escritorios*/ /*Pantallas para escritorios*/ /*Pantallas para escritorios*/ /*Pantallas para escritorios*/ /*Pantallas para escritorios*/ /*Pantallas para escritorios*/ /*Pantallas para escritorios*/ /*Pantallas para escritorios*/ /*Pantallas para escritorios*/ /*Pantallas para escritorios*/ /*Pantallas para escritorios*/ /*Pantallas para escritorios*/ /*Pantallas para escritorios*/ /*Pantallas para escritorios*/ /*Pantallas para escritorios*/ /*Pantallas para escritorios*/ /*Pantallas para escritorios*/ /*Pantallas para escritorios*/ /*Pantallas para escritorios*/ /*Pantallas para escritorios*/ /*Pantallas para escritorios*/ /*Pantallas para escritorios*/ /*Pantallas para escritorios*/ /*Pantallas para escritorios*/ /*Pantallas para escritorios*/ /*Pantallas para escritorios*/ /*Pantallas para escritorios*/ /*Pantallas para escritorios*/ /*Pantallas para escritorios*/ /*Pantallas para escritorios*/ /*Pantallas para escritorios*/ /*Pantallas para escritorios*/ /*Pantallas para escritorios*/ /*Pantallas para escritorios*/ /*Pantallas para escritorios*/ /*Pantallas para escritorios*/ /*Pantallas para escritorios*/ /*Pantallas para escritorios*/ /*Pantallas para escritorios*/ /*Pantallas para escritorios*/ /*Pantallas para 
+
+
+
+/*Pantallas para escritorios*/
+
+@media screen and (min-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    background-color: #e5e4e2;
+  }
+
+  /* Estructura grid del header, main, footer */
+
+  .estructure-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template:
+      "header" 6rem
+      "main" auto
+      "footer" 6rem;
+  }
+
+  .estructure-grid > * {
+    border: 1px solid black;
+  }
+
+  /* Navegador*/
+
+  .header {
+    background-color: rgb(0, 0, 0);
+    display: grid;
+    align-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0px 0px 10px 1px black;
+    border: none;
+    border-bottom: 0.125rem black solid;
+    animation: changeBorderColor 2.2s linear infinite; /* Aplica la animación de cambio de color del borde */
+  }
+
+  .logo {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 4rem 0 4rem;
+  }
+
+  .afull {
+    font-family: "Exo", sans-serif;
+    font-style: italic;
+    font-size: 2rem;
+    font-weight: 500;
+    color: white;
+    margin: 0;
+  }
+
+  .st {
+    color: white;
+    font-size: 0.8rem;
+    font-style: italic;
+    margin: 0 0 0 4px;
+    padding: 0;
+    color: #00b9e8;
+  }
+
+  .pc {
+    color: #00b9e8;
+  }
+
+  .menu-icon {
+    width: 1.875rem;
+    height: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    align-self: center;
+    display: none;
+  }
+
+  .menu-desk {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    color: white;
+    align-content: center;
+  }
+
+  .inicio,
+  .cuenta {
+    cursor: pointer;
+  }
+
+  .inicio:hover,
+  .cuenta:hover {
+    color: #00b9e8;
+  }
+
+  .line {
+    width: 100%;
+    height: 0.25rem;
+    background-color: #00b9e8;
+  }
+
+  /* main contenido principal*/
+
+  .main {
+    display: grid;
+    align-items: center;
+    border: none;
+    height: 100vh;
+  }
+
+  .container-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container-the-services {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    padding: 5rem 0 5rem 0;
+    color: white;
+    gap: 2rem;
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    box-shadow: 0px 0px 10px 1px black;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .services1,
+  .services2,
+  .services3 {
+    border: 2px solid #000000;
+    box-shadow: 0px 0px 10px 1px black;
+    background-color: #ffffff;
+    cursor: pointer;
+    width: 12rem;
+  }
+
+  .services-p {
+    cursor: pointer;
+  }
+
+  .services-icon1,
+  .services-icon2,
+  .services-icon3 {
+    width: 6.25rem;
+    padding: 1rem;
+  }
+
+  @keyframes talk {
+    0%,
+    100% {
+      transform: scaleY(1);
+    }
+    50% {
+      transform: scaleY(0.95);
+    }
+  }
+
+  .services-icon1 {
+    display: inline-block;
+    position: relative;
+    animation: talk 1s infinite alternate; /* Aplica la animación de habla */
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .services-icon2 {
+    display: inline-block;
+    animation: spin 20s linear infinite; /* Aplica la animación de giro */
+  }
+
+  @keyframes shake {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      transform: translateX(-1px);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+      transform: translateX(1px);
+    }
+  }
+
+  .services-icon3 {
+    display: inline-block;
+    animation: shake 2s infinite; /* Aplica la animación de sacudida */
+  }
+
+  @keyframes scaleAnimation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .services-p1,
+  .services-p2,
+  .services-p3 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-family: "Exo", sans-serif;
+    font-style: italic;
+    font-size: 1.4rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    transition: transform 0.3s;
+    background-color: #000000;
+  }
+
+  .services-p1:hover,
+  .services-p2:hover,
+  .services-p3:hover {
+    color: #00b9e8;
+  }
+
+  /* footer*/
+
+  .footer {
+    background-color: #000000;
+    box-shadow: 0px 0px 10px 1px black;
+    border: none;
+    border-top: 0.125rem black solid;
+    animation: changeBorderColor 2.2s linear infinite; /* Aplica la animación de cambio de color del borde */
+  }
+
+  .footer-item1,
+  .footer-item2 {
+    color: white;
+  }
+
+  .soporte {
+    color: #00b9e8;
+  }
+
+  .container-social {
+    display: flex;
+    gap: 10px;
+  }
+
+  .social-icon1,
+  .social-icon2,
+  .social-icon3 {
+    width: 2rem;
+    background-color: #00b9e8;
+    padding: 0.1rem;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 4rem 0 4rem;
+  }
+
+  /*POPUP*/
+
+  /* ... (tu código CSS anterior) ... */
+
+  .popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+
+  .popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 1px black;
+    width: 50%;
+  }
+
+  .close-popup {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .quicksupport {
+    background-color: #00b9e8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .close-popup:hover {
+    color: gray;
+  }
+
+  .quicksupport:hover {
+    color: rgb(0, 0, 0);
+  }
+
+  /* Define la animación para cambiar el color del borde */
+  @keyframes changeBorderColor {
+    0%,
+    100% {
+      border-color: #007bff; /* Color inicial y final del borde (negro) */
+    }
+    20% {
+      border-color: #00d68f; /* Cambia a rojo */
+    }
+    40% {
+      border-color: #ffc107; /* Cambia a amarillo */
+    }
+    60% {
+      border-color: #ff6b6b; /* Cambia a verde */
+    }
+    80% {
+      border-color: #a855f7; /* Cambia a azul */
+    }
+  }
+}

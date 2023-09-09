@@ -43,7 +43,7 @@
   .logo {
     display: flex;
     justify-content: space-between;
-    margin: 0 4rem 0 4rem;
+    margin: 0 2rem 0 2rem;
   }
 
   .afull {
@@ -104,7 +104,7 @@
     display: grid;
     background-color: none;
     color: white;
-    margin: auto 4rem auto 4rem;
+    margin: auto 2rem auto 2rem;
     gap: 2rem;
   }
 
@@ -260,7 +260,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 4rem 0 4rem;
+    margin: 0 2rem 0 2rem;
   }
 
   /*POPUP*/

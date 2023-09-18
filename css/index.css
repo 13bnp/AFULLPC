@@ -40,6 +40,7 @@
     animation: changeBorderColor 2.2s linear infinite; /* Aplica la animación de cambio de color del borde */
   }
 
+
   .logo {
     display: flex;
     justify-content: space-between;
@@ -53,19 +54,23 @@
     font-weight: 500;
     color: white;
     margin: 0;
+    padding: 0;
   }
 
   .st {
     color: white;
     font-size: 0.8rem;
     font-style: italic;
-    margin: 0 0 0 4px;
+    margin: 0;
     padding: 0;
     color: #00b9e8;
   }
 
+
   .pc {
     color: #00b9e8;
+    margin: 0;
+    padding: 0;
   }
 
   .menu-icon {
@@ -392,13 +397,14 @@
     font-weight: 500;
     color: white;
     margin: 0;
+    padding: 0;
   }
 
   .st {
     color: white;
     font-size: 0.8rem;
     font-style: italic;
-    margin: 0 0 0 4px;
+    margin: 0;
     padding: 0;
     color: #00b9e8;
   }

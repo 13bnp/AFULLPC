@@ -1,11 +1,18 @@
-<!DOCTYPE html>
+<!DOCTYPE html">
 <html lang="en">
 
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>¡AFULLPC!</title>
+    <title>AFULLPC</title>
+    <meta name="description"
+        content="Soluciones Tecnológicas: Encuentra asesoramiento, servicio técnico presencial y remoto, así como productos tecnológicos disponibles en nuestra sección de ventas.">
+    <meta name="keywords"
+        content="tecnología, productos tecnológicos, gadgets, electrónica, computación, asesoramiento, servicio técnico, remoto">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" type="image/png" href="/img/flaticon/Flaticon afullpc.png">
+    <link rel="canonical" href="https://www.afullpc.com/">
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +28,7 @@
         <nav class="navegador">
             <!--Logo-->
             <div class="logo">
-                <div class="afull">¡AFULL<span class="pc">PC!</span>
+                <div class="afull">AFULL<span class="pc">PC</span>
                     <p class="st">Soluciones técnologicas</p>
                 </div>
                 <div class="menu-desk">
@@ -97,7 +104,7 @@
                 </p>
             </div>
             <div class="container-social">
-                <img class="social-icon1" src="./img/icon sociales/instagram.png" alt="">
+                <a href="https://www.instagram.com/afullpc.tienda/" target="_blank"> <img class="social-icon1" src="./img/icon sociales/instagram.png" alt=""></a>
                 <img class="social-icon2" src="./img/icon sociales/facebook.png" alt="">
                 <img class="social-icon3" src="./img/icon sociales/tik-tok.png" alt="">
             </div>
@@ -108,7 +115,8 @@
     <div id="popup" class="popup">
         <div class="popup-content">
             <h2>TeamViewer QuickSupport</h2>
-            <p>Si necesitas asistencia, te recomendamos descargar QuickSupport y ejecutarlo. Luego, introduce el código
+            <p>Si necesitas asistencia, te recomendamos descargar QuickSupport y ejecutarlo. Luego, introduce el
+                código
                 de
                 asistencia proporcionado por el técnico para que puedas recibir la ayuda que requieres.</p>
             <a href="https://download.teamviewer.com/download/TeamViewerQS.exe"><button id="quicksupport"
@@ -117,21 +125,10 @@
             <button id="close-popup" class="close-popup">Cerrar</button>
         </div>
     </div>
+    <script src="/js/popup.js"></script>
+    <script src="/js/index.js"></script>
 
-    <!-- Script -->
-    <script>
-        const serviceButton = document.querySelector('.services2');
-        const popup = document.getElementById('popup');
-        const closePopup = document.getElementById('close-popup');
-
-        serviceButton.addEventListener('click', () => {
-            popup.style.display = 'flex';
-        });
-
-        closePopup.addEventListener('click', () => {
-            popup.style.display = 'none';
-        });
-    </script>
 </body>
+
 
 </html>

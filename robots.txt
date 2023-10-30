@@ -1,5 +1,1 @@
-<<<<<<< HEAD
 Sitemap: /xml/sitemap.xml
-=======
-Sitemap: /xml/sitemap.xml
->>>>>>> origin/main

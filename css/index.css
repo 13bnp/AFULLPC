@@ -358,7 +358,7 @@
 
   .estructure-grid {
     display: grid;
-    gap: 2rem;
+    gap: 3.86rem;
     grid-template:
       "header" 6rem
       "main" auto
@@ -454,7 +454,7 @@
     display: grid;
     align-items: center;
     border: none;
-    height: 100vh;
+    height: auto;
   }
 
   .container-img {

@@ -3,9 +3,10 @@
 /*Pantallas para moviles*/
 
 @media screen and (max-width: 767px) {
-  body {
+  body, html {
     margin: 0;
     padding: 0;
+    height: 100%;
     font-family: "Open Sans", sans-serif;
     background-color: #e5e4e2;
   }
@@ -16,9 +17,9 @@
     display: grid;
     gap: 2rem;
     grid-template:
-      "header" 6rem
+      "header" 15vh
       "main" auto
-      "footer" 6rem;
+      "footer" 15vh;
   }
 
   .estructure-grid > * {

@@ -16,7 +16,6 @@
 
   .estructure-grid {
     display: grid;
-    gap: 2rem;
     grid-template:
       "header" 6rem
       "main" auto

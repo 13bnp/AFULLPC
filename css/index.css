@@ -4,9 +4,9 @@
 
 @media screen and (max-width: 767px) {
   body, html {
+    border: 0;
     margin: 0;
     padding: 0;
-    height: 100%;
     font-family: "Open Sans", sans-serif;
     background-color: #e5e4e2;
   }
@@ -98,6 +98,8 @@
 
   .main {
     border: 0;
+    margin: 0;
+    padding: 0;
     display:grid
   }
 

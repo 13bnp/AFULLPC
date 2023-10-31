@@ -17,9 +17,9 @@
     display: grid;
     gap: 2rem;
     grid-template:
-      "header" 15vh
+      "header" 6rem
       "main" auto
-      "footer" 15vh;
+      "footer" 6rem;
   }
 
   .estructure-grid > * {

@@ -17,9 +17,9 @@
     display: grid;
     gap: 2rem;
     grid-template:
-      "header" 15vh
+      "header" 6rem
       "main" auto
-      "footer" 15vh;
+      "footer" 6rem;
   }
 
   .estructure-grid > * {
@@ -122,7 +122,7 @@
     transition: background-color 0.3s;
     transition: transform 0.3s;
     background-color: #000000;
-    height: 2.44rem;
+    height: 2.28rem;
   }
 
   .services-icon1,
@@ -139,7 +139,7 @@
     background-color: none;
     color: white;
     margin: auto 2rem auto 2rem;
-    gap: 1rem;
+    gap: 2rem;
   }
 
   a {

@@ -375,6 +375,7 @@
       "header" 6rem
       "main" auto
       "footer" 6rem;
+      overflow-y: hidden;
   }
 
   .estructure-grid > * {

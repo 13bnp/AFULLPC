@@ -363,11 +363,7 @@
     margin: 0;
     padding: 0;
     font-family: "Open Sans", sans-serif;
-<<<<<<< HEAD
-    background-color: #ffaa00;
-=======
-    background-color: #e5e4e2;
->>>>>>> 45626c2c461f14daa8ce55271ce1274125b65706
+    background-color: #ffd000;
   }
 
   /* Estructura grid del header, main, footer */
